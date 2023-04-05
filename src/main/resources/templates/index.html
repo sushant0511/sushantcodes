@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<table border="2">
+<thead>
+<tr>
+<th>Id</th>
+<th>Name</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+<tr th:each="ref : ${list}">
+<td th:text="${ref.id}">Id</td>
+<td th:text="${ref.name}">Name</td>
+<td th:text="${ref.cost}">Cost</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
+
+
+
+
